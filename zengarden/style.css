@@ -1,0 +1,215 @@
+/*
+ * CSS Zengarden by Oliver Kipping (C) 2021.
+ */
+
+
+/********
+ Classes
+ *******/
+
+.page-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
+    border: 1px solid #5F5F5F;
+    border-top: 0;
+    border-bottom: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.summary {
+    margin: 20px;
+    padding: 5px 0;
+    color: #000;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+}
+
+.preamble {
+    margin: 20px;
+    padding-bottom: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.main {
+    float: right;
+    margin: 20px 20px 20px 300px;
+    background: rgba(255, 255, 255, 0.5);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.sidebar {
+    position: absolute;
+    float: left;
+    width: 250px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.design-selection {
+    font-size: 16px;
+    line-height: 0.5cm;
+}
+
+.design-name {
+    font-size: 20px;
+}
+
+.design-name:after {
+    content: "\A";
+    white-space: pre;
+}
+
+
+/*********
+ Elements
+ ********/
+
+/* Blocks */
+
+body {
+    min-width: 320px;
+    max-width: 1024px;
+    margin: 0 auto !important;
+    padding: 0 2% !important;
+    /* background-image: linear-gradient(to right, #002244, #446688, #446688, #002244); */
+    background-image: url(images/backgrounds/background.png);
+    font-size: 0.5cm;
+    line-height: 0.75cm;
+    font-family: Jura-Book, sans-serif;
+}
+
+header {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+footer {
+    text-align: center;
+}
+
+nav {
+    padding-right: 10px;
+}
+
+p {
+    margin-left: 16px;
+    margin-right: 8px;
+    padding: 0 5px;
+    border-left: 1px dotted #FFF;
+}
+
+li {
+    margin: 8px auto;
+}
+
+
+/* Inline */
+
+a {
+    font-family: Jura-Light, sans-serif;
+    font-weight: bold;
+}
+
+a:link {
+    color: #008;
+}
+
+a:visited {
+    color: #800;
+}
+
+a:hover {
+    color: #080;
+}
+
+a:active {
+    color: #999;
+}
+
+h1, h2, h3 {
+    font-family: Frontier, sans-serif;
+}
+
+h1, h2, h3:before {
+    content: " ~ ";
+}
+
+h1 {
+    margin: 10px;
+    padding: 8px 8px;
+    font-size: 64px;
+    line-height: 64px;
+    color: #444
+}
+
+h2 {
+    margin: 5px;
+    padding: 4px 16px;
+    color: #555
+}
+
+h3 {
+    margin: 0;
+    padding: 2px 20px;
+    font-size: 0.5cm;
+    line-height: 0.75cm;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75)), linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 127, 0.75), rgba(255, 255, 255, 0.5));
+}
+
+
+/******
+ Fonts
+ *****/
+
+@font-face {
+    font-family: "Frontier";
+    font-display: swap;
+    src: url(fonts/frontier/font.eot), url(fonts/frontier/font.otf), url(fonts/frontier/font.svg), url(fonts/frontier/font.ttf), url(fonts/frontier/font.woff), url(fonts/frontier/font.woff2);
+}
+
+@font-face {
+    font-family: "Jura-Light";
+    font-display: swap;
+    src: url(fonts/jura/jura-light.ttf);
+}
+
+@font-face {
+    font-family: "Jura-Book";
+    font-display: swap;
+    src: url(fonts/jura/jura-book.ttf);
+}
+
+
+/***************
+ Mobile support
+ **************/
+
+@media only screen and (max-width: 1024px) {
+    body {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .main {
+        margin-left: 20px;
+        float: unset;
+    }
+
+    .sidebar {
+        margin: auto 20px;
+        float: unset;
+        position: unset;
+        max-width: 320px;
+        width: auto;
+    }
+}
+
