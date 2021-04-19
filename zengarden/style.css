@@ -169,12 +169,14 @@ h3 {
  Fonts
  *****/
 
+/* Frontier is a free font published by Allen R. Walden on https://www.dafont.com/final-frontier.font */
 @font-face {
     font-family: "Frontier";
     font-display: swap;
     src: url(fonts/frontier/font.eot), url(fonts/frontier/font.otf), url(fonts/frontier/font.svg), url(fonts/frontier/font.ttf), url(fonts/frontier/font.woff), url(fonts/frontier/font.woff2);
 }
 
+/* Jura is an Open Font designed by Daniel Johnson and Cyreal, published on https://fonts.google.com/specimen/Jura */
 @font-face {
     font-family: "Jura-Light";
     font-display: swap;
