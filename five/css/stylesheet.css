@@ -65,8 +65,12 @@ div.footer {
 
 div.column {
     float: left; /* Align next to each other */
-    width: 25%; /* 4 colums = 25% per column */
+    width: 23%; /* 4 colums = 25% per column */
     text-align: left; /* Overwrite text-align: center from parent (content) with left */
+}
+
+#logo-column {
+    margin-right: 64px;
 }
 
 #logo {
@@ -90,8 +94,8 @@ div.column {
     float: left;
     margin: 0 16px 0 4px;
     border-radius: 4px;
-    max-height: 10%;
-    max-width: 10%;
+    max-height: 32px;
+    max-width: 32px;
     vertical-align: middle; /* Fixes inline alignment problem (which pushes text down without this) */
 }
 
@@ -105,13 +109,13 @@ div.column {
 
 #mail-icon {
     background-color: white;
-    max-height: 5%;
-    max-width: 5%;
+    max-height: 24px;
+    max-width: 24px;
 }
 
 #steam-icon {
-    max-height: 5%;
-    max-width: 5%;
+    max-height: 24px;
+    max-width: 24px;
 }
 
 #github-icon {
