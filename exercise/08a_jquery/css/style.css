@@ -12,6 +12,11 @@ body {
     margin-right: auto;
 }
 
+.img-responsive {
+    height: 20vw;
+    width: 20vw;
+}
+
 .demo {
     margin-left: 40vw;
     width: 20vw;
