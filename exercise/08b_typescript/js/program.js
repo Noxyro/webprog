@@ -1,14 +1,12 @@
 import {sayHello} from "./lib/utils.js";
 
-let inputField = document.getElementById("input") as HTMLInputElement;
-
+var inputField = document.getElementById("input");
 inputField.addEventListener("keyup", function (event) {
     event.preventDefault();
     if (event.code === "Enter") {
-        let result: string;
-
+        var result = void 0;
         result = sayHello(inputField.value);
-
         console.log(result);
     }
-})
+});
+//# sourceMappingURL=program.js.map
