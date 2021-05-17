@@ -6,10 +6,23 @@
     <link href='https://fonts.googleapis.com/css?family=Fira Mono' rel='stylesheet'>
 </head>
 <body style="text-align: center; line-height: 33vh; padding: 0; margin: 0; color: #cccccc; background-color: #11111c; font-family: 'Fira Mono', serif;">
-    <h1 style="margin: 0; padding: 0">Input your name and press Enter ...</h1>
-    <label for="input">Input:</label><input id="input" type="text" />
-    <h1 style="margin: 0; padding: 0">... and check the console after.</h1>
-    <div id="version" style="display: none">v1.0</div>
+    <div id="local-error" style="display: none; color: red; line-height: 40vh">
+        <h2>This website has been opened locally and therefore can not load its script components properly.</h2>
+        <h2>Try the online version of this website <a href="https://noxyro.me/webprog/exercise/08b_typescript/">here</a> instead.</h2>
+    </div>
+    <div id="content">
+        <h1 style="margin: 0; padding: 0">Input your name and press Enter ...</h1>
+        <label for="input">Input:</label><input id="input" type="text" />
+        <h1 style="margin: 0; padding: 0">... and check the console after.</h1>
+        <div id="version" style="display: none">v1.0</div>
+    </div>
+    <!-- Check if this is a local copy of this website and show an error instead -->
+    <script type="application/javascript">
+        if (location.hostname === "localhost" || location.hostname === "127.0.0.1" || location.hostname === "") {
+            document.getElementById("local-error").style.display = ""
+            document.getElementById("content").style.display = "none"
+        }
+    </script>
     <script type="module" src="js/program.js"></script>
 </body>
 </html>
